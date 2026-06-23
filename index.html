@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bhawana | Data Analyst Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial, sans-serif;
+      background:#0F172A;
+      color:#F8FAFC;
+    }
+
+
+    
+
+    
+
+    /* Navbar */
+
+    .navbar{
+      background:#111827;
+    }
+
+    .navbar-brand,
+    .nav-link{
+      color:#FFFFFF !important; 
+      font-size: 28px;
+      font-weight:700;
+      letter-spacing: 1px;
+    }
+
+    .nav-link:hover{
+      color:#E5E7EB !important;
+      font-weight: 500;
+    }
+
+   /* Hero Section */
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(2,6,23,0.75),
+    rgba(15,23,42,0.90)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:800;
+    text-shadow:0 0 25px rgba(56,189,248,.5);
+}
+
+.hero p{
+    font-size:24px;
+    color:#CBD5E1;
+    margin-top:15px;
+}
+.hero-content{
+    max-width:850px;
+    padding:20px;
+    text-align:center;
+    margin:auto;
+}
+
+
+.hero-subtitle{
+    color:#38BDF8;
+    font-size:26px;
+    font-weight:600;
+}
+
+.hero-text{
+    color:#CBD5E1;
+    font-size:18px;
+    line-height:1.8;
+    margin-top:20px;
+}
+
+/* 👇 Profile Image */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+/* Card image styling */
+.card img{
+  height:180px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+
+/* Premium Button */
+
+.btn-custom{
+    background:#38BDF8;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:12px;
+    font-weight:600;
+
+    box-shadow:
+    0 0 15px rgba(56,189,248,.5),
+    0 0 30px rgba(56,189,248,.2);
+
+    transition:.4s;
+}
+
+.btn-custom:hover{
+    transform:translateY(-4px);
+    color:white;
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,.8),
+    0 0 40px rgba(56,189,248,.4);
+}
+/* Sections */
+
+section{
+    padding:100px 0;
+}
+
+/* Section Heading */
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    color:#38BDF8;
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:1px;
+
+    text-shadow:
+    0 0 10px rgba(56,189,248,.4),
+    0 0 20px rgba(56,189,248,.2);
+}
+
+.section-title::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:4px;
+    margin:15px auto 0;
+
+    background:linear-gradient(
+        90deg,
+        #38BDF8,
+        #8B5CF6
+    );
+
+    border-radius:20px;
+}
+  /* About */
+
+.about-box{
+    background:rgba(30,41,59,0.75);
+    color:white;
+
+    padding:35px;
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.35),
+    0 0 20px rgba(56,189,248,.15);
+
+    transition:.4s;
+}
+
+.about-box:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.45),
+    0 0 30px rgba(56,189,248,.25);
+}
+
+.about-box p{
+    color:#E2E8F0;
+    line-height:1.8;
+    font-size:18px;
+}
+.about-box h3{
+    color:#38BDF8;
+    font-weight:700;
+    margin-bottom:15px;
+
+    text-shadow:
+    0 0 10px rgba(56,189,248,.3);
+} 
+   /* Skills */
+
+.skill-card{
+    background:rgba(30,41,59,0.75);
+    color:white;
+
+    padding:30px;
+    text-align:center;
+
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.35),
+    0 0 15px rgba(56,189,248,.10);
+
+    transition:.4s;
+    height:100%;
+}
+
+.skill-card:hover{
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.45),
+    0 0 25px rgba(56,189,248,.30);
+}
+
+.skill-card i{
+    font-size:55px;
+    color:#38BDF8;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 10px rgba(56,189,248,.6),
+    0 0 20px rgba(56,189,248,.3);
+}
+
+.skill-card h4{
+    color:white;
+    font-size:22px;
+    font-weight:600;
+}
+.skill-card p{
+    color:#CBD5E1;
+    margin-top:8px;
+    font-size:15px;
+}
+/* Stats */
+
+#stats h2{
+    color:#38BDF8;
+    font-size:42px;
+    font-weight:700;
+
+    text-shadow:
+    0 0 15px rgba(56,189,248,.4);
+}
+
+#stats p{
+    color:#CBD5E1;
+    margin-top:10px;
+    font-size:18px;
+}
+
+  /* Education */
+
+.edu-box{
+    background:rgba(30,41,59,0.75);
+    color:white;
+
+    padding:30px;
+    margin-bottom:25px;
+
+    border-radius:20px;
+    border-left:5px solid #38BDF8;
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.35),
+    0 0 15px rgba(56,189,248,.10);
+
+    transition:.4s;
+}
+
+.edu-box:hover{
+    transform:translateX(10px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.45),
+    0 0 25px rgba(56,189,248,.30);
+}
+
+.edu-box h4{
+    color:#38BDF8;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.edu-box p{
+    color:#CBD5E1;
+    margin:0;
+}
+#education img{
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.4),
+    0 0 20px rgba(56,189,248,.20);
+
+    transition:.4s;
+}
+
+#education img:hover{
+    transform:scale(1.03);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.5),
+    0 0 30px rgba(56,189,248,.35);
+}
+   /* Projects */
+
+.project-card{
+    background:rgba(30,41,59,0.75);
+    color:white;
+
+    border-radius:20px;
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.35),
+    0 0 15px rgba(56,189,248,.10);
+
+    transition:.4s;
+    height:100%;
+}
+
+.project-card:hover{
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.50),
+    0 0 30px rgba(56,189,248,.30);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.project-card:hover img{
+    transform:scale(1.08);
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h4{
+    color:#38BDF8;
+    font-weight:700;
+    margin-bottom:15px;
+
+    text-shadow:
+    0 0 10px rgba(56,189,248,.3);
+}
+
+.project-content p{
+    color:#CBD5E1;
+    line-height:1.7;
+}
+
+.project-content ul{
+    padding-left:20px;
+    color:#E2E8F0;
+}
+
+.project-content ul li{
+    margin-bottom:8px;
+}
+    /* Contact */
+
+.contact-box{
+    background:rgba(30,41,59,0.75);
+    color:white;
+
+    padding:40px;
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.35),
+    0 0 15px rgba(56,189,248,.10);
+
+    transition:.4s;
+}
+
+.contact-box:hover{
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.45),
+    0 0 25px rgba(56,189,248,.25);
+}
+
+.contact-box h4{
+    color:#38BDF8;
+}
+
+.contact-box p{
+    color:#CBD5E1;
+}
+
+.contact-info i{
+    color:#38BDF8;
+    margin-right:10px;
+
+    text-shadow:
+    0 0 10px rgba(56,189,248,.5);
+}
+
+/* Form */
+.form-control{
+    background:#0F172A;
+    border:1px solid #334155;
+    color:white;
+}
+
+.form-control:focus{
+    background:#0F172A;
+    color:white;
+    border-color:#38BDF8;
+
+    box-shadow:
+    0 0 15px rgba(56,189,248,.4);
+}
+
+.form-control::placeholder{
+    color:#94A3B8;
+}
+
+
+/* Primary Buttons */
+
+.btn-primary{
+    background:linear-gradient(
+    135deg,
+    #38BDF8,
+    #6366F1
+    );
+
+    border:none;
+    border-radius:12px;
+
+    padding:10px 20px;
+
+    box-shadow:
+    0 0 15px rgba(56,189,248,.4);
+
+    transition:.4s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 25px rgba(56,189,248,.8);
+
+    background:linear-gradient(
+    135deg,
+    #0EA5E9,
+    #4F46E5
+    );
+}
+
+/* Footer */
+
+footer{
+    background:#0F172A;
+    border-top:1px solid #334155;
+    color:#CBD5E1;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    margin:0;
+    letter-spacing:1px;
+}
+
+</style>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+          <i class="fa-solid fa-chart-line"></i> Bhawana
+      </a>
+
+      <button
+        class="navbar-toggler bg-light"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+</nav>
+/* Premium Navbar */
+
+.navbar{
+    background:rgba(15,23,42,.85);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    padding:15px 0;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.35);
+}
+
+.navbar-brand{
+    color:#38BDF8 !important;
+    font-size:30px;
+    font-weight:700;
+
+    text-shadow:
+    0 0 15px rgba(56,189,248,.4);
+}
+
+.navbar-brand i{
+    margin-right:8px;
+}
+
+.nav-link{
+    color:#E2E8F0 !important;
+    font-size:18px;
+    margin-left:20px;
+
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#38BDF8 !important;
+
+    text-shadow:
+    0 0 10px rgba(56,189,248,.5);
+}
+  
+<!-- Hero Section -->
+ <section class="hero">
+
+    <div class="hero-content">
+
+      <img src="profile.jpg" class="profile-img" alt="My Photo">
+
+        <h1>Hello, I'm Bhawana</h1>
+
+        <p class="hero-subtitle">
+            Aspiring Data Analyst | Power BI | SQL | Python | Excel
+        </p>
+
+        <p class="hero-text">
+            Transforming Raw Data into Actionable Business Insights
+            through Data Visualization, Analytics, and Dashboard Development.
+        </p>
+
+        <div class="mt-4">
+
+            <a href="#contact"
+               class="btn btn-custom me-2">
+               Contact Me
+            </a>
+
+            <a href="https://github.com/bulbulmishra591995-rgb"
+               target="_blank"
+               class="btn btn-primary me-2">
+               <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/bhawana-sharma-b9576a3b5/?skipRedirect=true"
+               target="_blank"
+               class="btn btn-primary">
+               <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>  
+
+<!-- About Section -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <h2 class="section-title">About Me</h2>
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-8">
+
+          <div class="about-box">
+
+            <p>
+              I am an aspiring Data Analyst with skills in
+              Python, SQL, Excel, Power BI, NumPy, and Pandas.
+            </p>
+
+            <p>
+              I enjoy analyzing data, building dashboards,
+              and solving business problems using data-driven insights.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- STATS SECTION YAHAN PASTE KARO -->
+
+<section id="stats">
+
+<div class="container">
+
+<h2 class="section-title">My Achievements</h2>
+
+<div class="row text-center">
+
+<div class="col-md-3 mb-4">
+<div class="skill-card">
+<h2>10+</h2>
+<p>Projects</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-4">
+<div class="skill-card">
+<h2>5+</h2>
+<p>Power BI Dashboards</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-4">
+<div class="skill-card">
+<h2>50+</h2>
+<p>DAX Measures</p>
+</div>
+</div>
+
+<div class="col-md-3 mb-4">
+<div class="skill-card">
+<h2>10+</h2>
+<p>Dataset Analyzed</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+  <!-- Skills Section -->
+
+<section id="skills">
+
+  <div class="container">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Power BI -->
+
+      <div class="col-md-3">
+        <div class="skill-card">
+          <i class="fa-solid fa-chart-column"></i>
+         <h4>Power BI</h4>
+
+    <p>Advanced</p>
+
+</div>
+      </div>
+
+      <!-- Excel -->
+
+      <div class="col-md-3">
+        <div class="skill-card">
+          <i class="fa-solid fa-file-excel"></i>
+           <h4>Excel</h4>
+
+    <p>Advanced</p>
+
+</div>
+      </div>
+
+      <!-- SQL -->
+
+      <div class="col-md-3">
+        <div class="skill-card">
+          <i class="fa-solid fa-database"></i>
+          <h4>SQL</h4>
+
+    <p>Intermediate</p>
+
+</div>
+      </div>
+
+      <!-- Python -->
+
+      <div class="col-md-3">
+        <div class="skill-card">
+          <i class="fa-brands fa-python"></i>
+           <h4>NumPy</h4>
+
+    <p>Intermediate</p>
+
+</div>
+      </div>
+
+      <!-- NumPy -->
+
+      <div class="col-md-3">
+        <div class="skill-card">
+          <i class="fa-brands fa-python"></i>
+         <h4>NumPy</h4>
+
+    <p>Intermediate</p>
+
+</div>
+      </div>
+
+      <!-- Pandas -->
+
+      <div class="col-md-3">
+        <div class="skill-card">
+          <i class="fa-brands fa-python"></i>
+          <h4>Pandas</h4>
+
+    <p>Intermediate</p>
+
+</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section> 
+  <!-- Education Section -->
+
+  <section id="education">
+
+<div class="container">
+
+<h2 class="section-title">Education</h2>
+
+<div class="row align-items-center">
+
+<div class="col-md-4">
+
+<img
+src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+class="img-fluid rounded shadow"
+alt="Education">
+
+</div>
+
+<div class="col-md-8">
+
+<div class="edu-box">
+<h4>M.Sc Physics</h4>
+<p>Rajasthan University</p>
+</div>
+
+<div class="edu-box">
+<h4>B.Sc</h4>
+<p>Maharshi Dayanand University, Rohtak</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- Projects Section -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <h2 class="section-title">Projects</h2>
+
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+              alt="Car Sales Dashboard">
+
+            <div class="project-content">
+
+              <h4>Car Sales Data Analysis</h4>
+
+              <p>
+                Created interactive Excel dashboards and reports
+                for car sales analysis and business insights.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+              alt="Road Accident Dashboard">
+
+            <div class="project-content">
+
+              <h4>Road Accident Data Analysis</h4>
+
+              <p>
+                Analyzed road accident data using Excel and Power BI
+                to identify accident trends and risk areas.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+              alt="SQL Analytics">
+
+            <div class="project-content">
+
+              <h4>SQL Analytics Project</h4>
+
+              <p>
+                Performed advanced SQL queries using joins,
+                subqueries, and aggregate functions
+                for business data analysis.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 4 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+              alt="Python Analytics">
+
+            <div class="project-content">
+
+              <h4>Python Analytics Project</h4>
+
+              <p>
+                Used Python, Pandas, and NumPy libraries
+                for data cleaning, analysis, and visualization.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 5 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+              alt="Student Management System">
+
+            <div class="project-content">
+
+              <h4>Student Management System</h4>
+
+              <p>
+                Developed a Student Management System
+                for managing student records and performance details.
+              </p>
+
+              <ul>
+                <li>Add Student</li>
+                <li>Update Student</li>
+                <li>Delete Student</li>
+                <li>Search Student</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Project 6 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="images/HR Analytics Dashboard.png" class="img-fluid mb-3" alt="HR Dashboard">
+              
+
+            <div class="project-content">
+
+             <h4 class="mb-3">HR Analytics Dashboard</h4>
+
+<a href="https://github.com/bulbulmishra591995-rgb/HR-Analytics-Dashboard-Report"
+   target="_blank"
+   class="btn btn-primary me-2">
+   View Project
+
+</a>
+
+<a href="https://www.linkedin.com/posts/bhawana-sharma-b9576a3b5_powerbi-dataanalytics-hranalytics-ugcPost-7474887088623001600-R_T4/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGVh1CEBGIqFKyArcY3T-28cL5yMgATW5HM"
+   target="_blank"
+   class="btn btn-primary">
+   Watch Demo Video
+
+</a>
+
+
+              <p class="mt-3">
+                
+  Designed an interactive HR Analytics Dashboard in Power BI
+  to track employee attrition, job satisfaction, department-wise
+  performance, and workforce insights through dynamic visualizations.
+
+              </p>
+
+              <ul>
+  <li>Employee Attrition Analysis</li>
+  <li>Department-wise Performance Insights</li>
+  <li>Job Satisfaction Analysis</li>
+  <li>Interactive Slicers & Filters</li>
+  <li>HR KPI Monitoring</li>
+</ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Project 7 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="images/Sales Dashboard.png" class="img-fluid mb-3" alt="Sales Dashboard">
+              
+
+            <div class="project-content">
+
+              <h4>Power BI Sales Dashboard</h4>
+
+              <p>
+                Designed an interactive Power BI dashboard
+                with KPIs, charts, slicers, and business insights.
+              </p>
+
+              <ul>
+                <li>Sales KPIs</li>
+                <li>Monthly Revenue Analysis</li>
+                <li>Top Products Analysis</li>
+                <li>Region-wise Sales Report</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        
+
+        <!-- Project 8 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="images/Finance Dashboard.png" class="img-fluid mb-3" alt="Finance Dashboard">
+              
+
+            <div class="project-content">
+
+              <h4>Finance Dashboard</h4>
+              
+
+<a href="https://github.com/bulbulmishra591995-rgb/Finance-Report-Dashboard"
+   target="_blank"
+   class="btn btn-primary">
+   View Project
+
+</a>
+
+              <p>
+                Developed a finance dashboard to track expenses, budget vs actual
+                performance, profit margins, and financial KPIs using Power BI
+                and Excel.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div> 
+        
+        <!-- Project 9 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="images/E-Commerce Dashboard.png" class="img-fluid mb-3" alt="E-Commerce Dashboard">
+              
+
+            <div class="project-content">
+
+              <h4>E-Commerce Dashboard</h4>
+               <a href="https://github.com/bulbulmishra591995-rgb/E-commerce-Dashboard"
+   target="_blank"
+   class="btn btn-primary">
+   View Project
+   </a>
+
+              <p>
+                Created an interactive dashboard to analyze customer behavior,
+                repeat customers, sales trends, and delivery performance using
+                Power BI.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+        <!-- Project 10 -->
+
+        <div class="col-md-4">
+
+          <div class="project-card">
+
+            <img
+              src="images/Coaching Institute ERP Dashboard.png" class="img-fluid mb-3" alt="ERP Dashboard">
+              
+
+            <div class="project-content">
+
+              <h4>Coaching Institute ERP Dashboard</h4>
+
+              <a href= "https://github.com/bulbulmishra591995-rgb/Coaching-Institute-ERP-Dashboard"
+   target="_blank"
+   class="btn btn-primary">
+   View Project
+</a>
+
+              <p>
+                Built an ERP dashboard to monitor student admissions, fee
+                collection, attendance, and faculty performance using Power BI
+                and Excel.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>        
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-8">
+
+          <div class="contact-box">
+
+            <form id="contactForm">
+
+              <div class="mb-3">
+
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required>
+
+              </div>
+
+              <div class="mb-3">
+
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required>
+
+              </div>
+
+              <div class="mb-3">
+
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your Message"
+                  required></textarea>
+
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary">
+
+                Send Message
+
+              </button>
+
+            </form>
+
+            <!-- Contact Information -->
+
+<hr class="my-4">
+
+<div class="contact-info">
+
+<h4 class="mb-3">Contact Information</h4>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+Email: bulbulmishra591995@gmail.com
+</p>
+
+<p>
+<i class="fa-solid fa-phone"></i>
+Phone: +91 7015163848
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Rewari, Haryana, India
+</p>
+
+<div class="mt-4">
+
+<a href="https://github.com/bulbulmishra591995-rgb"
+   target="_blank"
+   class="btn btn-primary me-2">
+   <i class="fa-brands fa-github"></i> GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/bhawana-sharma-b9576a3b5/?skipRedirect=true"
+   target="_blank"
+   class="btn btn-primary">
+   <i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+            
+
+  <!-- Footer -->
+
+<footer>
+  <p>
+    © 2026 Bhawana | Data Analyst Portfolio | All Rights Reserved
+  </p>
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript -->
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("Thank You! Your message has been sent successfully.");
+
+    this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
