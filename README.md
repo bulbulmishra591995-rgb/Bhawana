@@ -19,3 +19,7 @@ E-commerce Dashboard
 GitHub Link : https://github.com/bulbulmishra591995-rgb/E-commerce-Dashboard
 
 
+### Python Project
+## IBM HR Analytics Project
+GitHub Link : https://github.com/bulbulmishra591995-rgb/IBM-HR-Analytics-Employee-Attrition-Prediction
+
